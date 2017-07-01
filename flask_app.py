@@ -4,7 +4,8 @@ Routes and views for the flask application.
 
 from datetime import datetime
 from flask import render_template, request, send_file
-from FlaskWeb import app
+from flask import Flask
+app = Flask(__name__)
 
 @app.route('/')
 @app.route('/home')e
